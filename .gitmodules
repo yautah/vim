@@ -1,27 +1,66 @@
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
-[submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
+[submodule "snippets"]
+	path = snippets
+	url = git://github.com/akitaonrails/snipmate-snippets.git
+  ignore = dirty
+  
+[submodule "bundle/rails"]
+	path = bundle/rails
+	url = git://github.com/tpope/vim-rails.git
+  ignore = dirty
+[submodule "bundle/surround"]
+	path = bundle/surround
 	url = git://github.com/tpope/vim-surround.git
-[submodule "bundle/vim-ruby"]
-	path = bundle/vim-ruby
-	url = git://github.com/vim-ruby/vim-ruby.git
-[submodule "bundle/vim-ragtag"]
-	path = bundle/vim-ragtag
+  ignore = dirty
+[submodule "bundle/NERD_tree"]
+	path = bundle/NERD_tree
+	url = git://github.com/scrooloose/nerdtree.git
+  ignore = dirty
+[submodule "bundle/NERD_commenter"]
+	path = bundle/NERD_commenter
+	url = git://github.com/scrooloose/nerdcommenter.git
+  ignore = dirty
+[submodule "bundle/ragtag"]
+	path = bundle/ragtag
 	url = git://github.com/tpope/vim-ragtag.git
+  ignore = dirty
+[submodule "bundle/vividchalk"]
+	path = bundle/vividchalk
+	url = git://github.com/tpope/vim-vividchalk.git
+  ignore = dirty
+[submodule "bundle/endwise"]
+	path = bundle/endwise
+	url = git://github.com/tpope/vim-endwise.git
+  ignore = dirty
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git://github.com/akitaonrails/snipmate.vim.git
-[submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = git://github.com/ervandew/supertab.git
-[submodule "bundle/ack"]
-	path = bundle/ack
-	url = git://github.com/mileszs/ack.vim.git
+  ignore = dirty
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
-[submodule "bundle/vim-rails"]
-	path = bundle/vim-rails
-	url = git://github.com/tpope/vim-rails.git
+  ignore = dirty
+[submodule "bundle/Command-T"]
+	path = bundle/Command-T
+	url = git://github.com/akitaonrails/Command-T.git
+  ignore = dirty
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
+  ignore = dirty
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = git://github.com/mileszs/ack.vim.git
+  ignore = dirty
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git://github.com/ervandew/supertab.git
+  ignore = dirty
+[submodule "bundle/vim-preview"]
+	path = bundle/vim-preview
+	url = git://github.com/greyblake/vim-preview.git
+[submodule "bundle/zencoding-vim"]
+	path = bundle/zencoding-vim
+	url = git://github.com/mattn/zencoding-vim.git
+[submodule "snippets"]
+	path = snippets
+	url = git://github.com/akitaonrails/snipmate-snippets.git
