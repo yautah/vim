@@ -1,7 +1,7 @@
-[submodule "snippets"]
-	path = snippets
-	url = git://github.com/akitaonrails/snipmate-snippets.git
-  ignore = dirty
+#[submodule "snippets"]
+	#path = snippets
+	#url = git://github.com/akitaonrails/snipmate-snippets.git
+  #ignore = dirty
   
 [submodule "bundle/rails"]
 	path = bundle/rails
