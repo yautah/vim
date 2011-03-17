@@ -1,0 +1,2 @@
+supertab.vba: call delete('/home/yang/.vim/doc/supertab.txt')|call delete('/home/yang/.vim/plugin/supertab.vim')
+rails.vba: call delete('/home/yang/.vim/autoload/rails.vim')|call delete('/home/yang/.vim/plugin/rails.vim')|call delete('/home/yang/.vim/doc/rails.txt')
