@@ -1,51 +1,27 @@
 [submodule "bundle/rails"]
 	path = bundle/rails
 	url = git://github.com/tpope/vim-rails.git
-  ignore = dirty
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = git://github.com/tpope/vim-surround.git
-  ignore = dirty
-[submodule "bundle/NERD_tree"]
-	path = bundle/NERD_tree
-	url = git://github.com/scrooloose/nerdtree.git
-  ignore = dirty
-[submodule "bundle/NERD_commenter"]
-	path = bundle/NERD_commenter
-	url = git://github.com/scrooloose/nerdcommenter.git
-  ignore = dirty
 [submodule "bundle/ragtag"]
 	path = bundle/ragtag
 	url = git://github.com/tpope/vim-ragtag.git
-  ignore = dirty
 [submodule "bundle/endwise"]
 	path = bundle/endwise
 	url = git://github.com/tpope/vim-endwise.git
-  ignore = dirty
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
-	url = git://github.com/msanders/snipmate.vim.git 
-  ignore = dirty
+	url = git://github.com/msanders/snipmate.vim.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
-  ignore = dirty
-[submodule "bundle/Command-T"]
-	path = bundle/Command-T
-	url = git://git.wincent.com/command-t.git
-  ignore = dirty
-[submodule "bundle/vim-ruby"]
-	path = bundle/vim-ruby
-	url = git://github.com/vim-ruby/vim-ruby.git
-  ignore = dirty
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = git://github.com/mileszs/ack.vim.git
-  ignore = dirty
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
-  ignore = dirty
 [submodule "bundle/vim-preview"]
 	path = bundle/vim-preview
 	url = git://github.com/greyblake/vim-preview.git
@@ -55,3 +31,18 @@
 [submodule "snippets"]
 	path = snippets
 	url = git://github.com/akitaonrails/snipmate-snippets.git
+[submodule "bundle/rvm"]
+	path = bundle/rvm
+	url = git://github.com/csexton/rvm.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/commandT"]
+	path = bundle/commandT
+	url = git://git.wincent.com/command-t.git
+[submodule "bundle/ruby"]
+	path = bundle/ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
