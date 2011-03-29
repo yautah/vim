@@ -2,6 +2,8 @@
 " Version: 0.1
 " Last Change: 16/04/10 09:17:57
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"load pathogen managed plugins
+call pathogen#runtime_append_all_bundles()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
@@ -522,6 +524,10 @@ let g:surround_61 = "<%= \r %>" "yss= means <%= %>
 
 " 3. nerd_tree
 nmap <silent> <Leader>wm :NERDTreeToggle<CR>
+
+" 4. CommandT plugins
+nmap <silent> <Leader>ft :CommandT<CR>
+nmap <silent> <Leader>fb :CommandTFlush<CR>
 
 " 4.bufexplorer
 nnoremap <C-B> :BufExplorer<cr>
