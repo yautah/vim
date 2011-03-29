@@ -2,7 +2,7 @@
 " Version: 0.1
 " Last Change: 16/04/10 09:17:57
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"load pathogen managed plugins
+"使用pathogen管理plugin
 call pathogen#runtime_append_all_bundles()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -10,6 +10,7 @@ call pathogen#runtime_append_all_bundles()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "使用非vi兼容模式
 set nocompatible
+
 "操作系统判断
 function! MySys()
   return "linux"
@@ -321,23 +322,6 @@ map <silent> <leader>cd :cd %:p:h<cr>
 
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Parenthesis/bracket expanding
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-vnoremap @1 <esc>`>a)<esc>`<i(<esc>
-vnoremap @2 <esc>`>a]<esc>`<i[<esc>
-vnoremap @3 <esc>`>a}<esc>`<i{<esc>
-vnoremap @$ <esc>`>a"<esc>`<i"<esc>
-vnoremap @q <esc>`>a'<esc>`<i'<esc>
-vnoremap @w <esc>`>a"<esc>`<i"<esc>
-
-"Map auto complete of (, ", ', [
-inoremap @1 ()<esc>:let leavechar=")"<cr>i
-inoremap @2 []<esc>:let leavechar="]"<cr>i
-inoremap @3 {}<esc>:let leavechar="}"<cr>i
-inoremap @4 {<esc>o}<esc>:let leavechar="}"<cr>O
-inoremap @q ''<esc>:let leavechar="'"<cr>i
-inoremap @w ""<esc>:let leavechar='"'<cr>i
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 命令模式配置
@@ -466,24 +450,6 @@ set complete-=u
 set complete-=i
 
 
-" mapping
-inoremap <expr> <CR>       pumvisible()?"\<C-Y>":"\<CR>"
-inoremap <expr> <C-J>      pumvisible()?"\<PageDown>\<C-N>\<C-P>":"\<C-X><C-O>"
-inoremap <expr> <C-K>      pumvisible()?"\<PageUp>\<C-P>\<C-N>":"\<C-K>"
-inoremap <expr> <C-U>      pumvisible()?"\<C-E>":"\<C-U>"
-inoremap <C-]>             <C-X><C-]>
-inoremap <C-F>             <C-X><C-F>
-inoremap <C-D>             <C-X><C-D>
-inoremap <C-L>             <C-X><C-L>
-
-" Enable syntax
-"if has("autocmd") && exists("+omnifunc")
-"  autocmd Filetype *
-"        if &omnifunc == "" |
-"          setlocal omnifunc=syntaxcomplete#Complete |
-"        endif
-"endif
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " cscope setting
@@ -520,7 +486,6 @@ let g:surround_61 = "<%= \r %>" "yss= means <%= %>
 
 " 2. matchit (% to bounce from do to end, etc.)
 :let loaded_matchit = 1
-"runtime! macros/matchit.vim
 
 " 3. nerd_tree
 nmap <silent> <Leader>wm :NERDTreeToggle<CR>
