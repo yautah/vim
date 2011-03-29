@@ -1,3 +1,0 @@
-rails.vba: call delete('/home/yang/.vim/autoload/rails.vim')|call delete('/home/yang/.vim/plugin/rails.vim')|call delete('/home/yang/.vim/doc/rails.txt')
-supertab.vba: call delete('/home/yang/.vim/doc/supertab.txt')|call delete('/home/yang/.vim/plugin/supertab.vim')
-Align.vba: call delete('/home/yang/.vim/plugin/AlignPlugin.vim')|call delete('/home/yang/.vim/plugin/AlignMapsPlugin.vim')|call delete('/home/yang/.vim/plugin/cecutil.vim')|call delete('/home/yang/.vim/doc/Align.txt')|call delete('/home/yang/.vim/autoload/Align.vim')|call delete('/home/yang/.vim/autoload/AlignMaps.vim')
