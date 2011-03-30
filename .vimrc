@@ -480,19 +480,38 @@ nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 插件配置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ack
+let g:ackprg="ack-grep -H  --nogroup --column"
+
+nmap <silent> <leader>lv :lv /<c-r>=expand("<cword>")<cr>/ %<cr>:lw<cr>
+vmap <silent> <leader>lv :lv /<c-r>=<sid>GetVisualSelection()<cr>/ %<cr>:lw<cr>
+function! s:GetVisualSelection()
+  let save_a = @a
+  silent normal! gv"ay
+  let v = @a
+  let @a = save_a
+  let var = escape(v, '\\/.$*')
+  return var
+endfunction
+
+nmap <silent> <leader>la :Ack /<c-r>=expand("<cword>")<cr><cr>/ %<cr>:pwd<cr>
+
 " 1. surround
 let g:surround_45 = "<% \r %>"  "yss- means <%  %>
 let g:surround_61 = "<%= \r %>" "yss= means <%= %>
 
 " 2. matchit (% to bounce from do to end, etc.)
-:let loaded_matchit = 1
+let g:loaded_matchit = 1
+
+" vim-preview
+let g:PreviewBrowsers='google-chrome'
 
 " 3. nerd_tree
 nmap <silent> <Leader>wm :NERDTreeToggle<CR>
 
 " 4. CommandT plugins
 nmap <silent> <Leader>ft :CommandT<CR>
-nmap <silent> <Leader>fb :CommandTFlush<CR>
+nmap <silent> <Leader>fb :CommandTBuffer<CR>
 
 " 4.bufexplorer
 nnoremap <C-B> :BufExplorer<cr>
