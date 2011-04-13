@@ -13,7 +13,7 @@ set nocompatible
 
 "操作系统判断
 function! MySys()
-  return "linux"
+  return "windows"
 endfunction
 
 "回滚次数
@@ -25,6 +25,9 @@ if MySys() == "windows"
   set langmenu=zh_CN.UTF-8
   language message zh_CN.UTF-8
   set fileencodings=ucs-bom,utf-8,gb18030,cp936,big5,euc-jp,euc-kr,latin1
+
+  let s:ruby_path = 'd:\ruby\bin'
+  let g:ruby_path = 'd:\ruby\bin'
 endif
 
 "Enable filetype plugin
@@ -136,9 +139,10 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "字体
 if MySys() == "linux"
-  "set gfn=Monaco\ 8
+  set gfn=Monaco\ 8
 else
-  set gfn=Monaco:h10:cANSI
+  set guifont=YaHei\ Consolas\ Hybrid:h12
+  set guifontwide=YaHei\ Consolas\ Hybrid:h12
 endif
 
 " Avoid clearing hilight definition in plugins
