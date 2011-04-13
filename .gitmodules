@@ -28,9 +28,6 @@
 [submodule "bundle/zencoding-vim"]
 	path = bundle/zencoding-vim
 	url = git://github.com/mattn/zencoding-vim.git
-[submodule "snippets"]
-	path = snippets
-	url = git://github.com/akitaonrails/snipmate-snippets.git
 [submodule "bundle/rvm"]
 	path = bundle/rvm
 	url = git://github.com/csexton/rvm.vim.git
@@ -46,3 +43,6 @@
 [submodule "bundle/ruby"]
 	path = bundle/ruby
 	url = git://github.com/vim-ruby/vim-ruby.git
+[submodule "snippets"]
+	path = snippets
+	url = git://github.com/yautah/snipmate-snippets.git
