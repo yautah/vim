@@ -46,3 +46,6 @@
 [submodule "snippets"]
 	path = snippets
 	url = git://github.com/yautah/snipmate-snippets.git
+[submodule "bundle/vim-scala"]
+	path = bundle/vim-scala
+	url = https://github.com/ewiplayer/vim-scala.git
