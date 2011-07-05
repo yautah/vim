@@ -141,8 +141,8 @@ endif
 if MySys() == "linux"
   set gfn=Monaco\ 8
 else
-  set guifont=YaHei\ Consolas\ Hybrid:h12
-  set guifontwide=YaHei\ Consolas\ Hybrid:h12
+  set guifont=YaHei\ Consolas\ Hybrid:h11
+  set guifontwide=YaHei\ Consolas\ Hybrid:h11
 endif
 
 " Avoid clearing hilight definition in plugins
@@ -407,7 +407,7 @@ set expandtab
 set shiftwidth=2
 map <leader>t2 :set shiftwidth=2<cr>
 map <leader>t4 :set shiftwidth=4<cr>
-au FileType html,python,vim,javascript setl shiftwidth=2
+au FileType html,python,vim,javascript,ruby,eruby setl shiftwidth=2
 
 "au FileType html,python,vim,javascript setl tabstop=2
 au FileType java,c,cs setl shiftwidth=4
