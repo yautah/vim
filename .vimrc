@@ -57,6 +57,13 @@ nmap <silent> <leader>qa :qa<cr>
 "Fast remove highlight search
 nmap <silent> <leader><cr> :noh<cr>
 
+"nmap <silent> <leader>a= :Align =<cr>
+nmap <silent> <leader>a: :Align :<cr>
+"nmap <silent> <leader>a| :Align |<cr>
+"nmap <silent> <leader>a- :Align -<cr>
+"nmap <silent> <leader>a, :Align ,<cr>
+
+
 
 "快速开tab打开指定文件,下面快速编辑vimrc文件中调用
 function! SwitchToBuf(filename)
